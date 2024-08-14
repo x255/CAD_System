@@ -328,6 +328,12 @@
     <Compile Include="uc_biomarker.Designer.cs">
       <DependentUpon>uc_biomarker.cs</DependentUpon>
     </Compile>
+    <Compile Include="uc_card_main.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_card_main.Designer.cs">
+      <DependentUpon>uc_card_main.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Frm_main.resx">
       <DependentUpon>Frm_main.cs</DependentUpon>
     </EmbeddedResource>
@@ -345,6 +351,9 @@
     </Compile>
     <EmbeddedResource Include="uc_biomarker.resx">
       <DependentUpon>uc_biomarker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_card_main.resx">
+      <DependentUpon>uc_card_main.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

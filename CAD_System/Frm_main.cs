@@ -35,7 +35,8 @@ namespace CAD_System
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-
+            uc_card_main uc_card = new uc_card_main();
+            addUserControl(uc_card);
         }
 
         private void label3_Click(object sender, EventArgs e)

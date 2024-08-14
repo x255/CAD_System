@@ -108,7 +108,7 @@
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(94, 435);
+            this.guna2Button1.Location = new System.Drawing.Point(94, 403);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(180, 45);
             this.guna2Button1.TabIndex = 3;
@@ -155,7 +155,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(728, 115);
+            this.label5.Location = new System.Drawing.Point(742, 115);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(32, 18);
             this.label5.TabIndex = 8;
@@ -165,7 +165,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(728, 318);
+            this.label6.Location = new System.Drawing.Point(326, 49);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(32, 18);
             this.label6.TabIndex = 9;

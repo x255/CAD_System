@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
@@ -47,7 +48,6 @@
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.panel_main = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,6 +72,13 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1300, 52);
             this.panel1.TabIndex = 0;
+            // 
+            // panel10
+            // 
+            this.panel10.Location = new System.Drawing.Point(180, 52);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1120, 668);
+            this.panel10.TabIndex = 4;
             // 
             // guna2Button8
             // 
@@ -333,7 +340,7 @@
             this.guna2Button2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(2)))), ((int)(((byte)(102)))));
             this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(2)))), ((int)(((byte)(102)))));
             this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.guna2Button2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.ImageOffset = new System.Drawing.Point(5, 0);
@@ -373,13 +380,6 @@
             this.guna2Button1.TextOffset = new System.Drawing.Point(10, 0);
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // panel10
-            // 
-            this.panel10.Location = new System.Drawing.Point(180, 52);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1120, 668);
-            this.panel10.TabIndex = 4;
-            // 
             // panel_main
             // 
             this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -401,6 +401,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
