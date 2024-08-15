@@ -298,6 +298,7 @@
             this.guna2Button4.Text = "Progression";
             this.guna2Button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button4.TextOffset = new System.Drawing.Point(10, 0);
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // guna2Button3
             // 

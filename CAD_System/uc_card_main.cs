@@ -38,9 +38,10 @@ namespace CAD_System
                 float[] features = { age, gender, weight, height, ap_hi, ap_lo, cholesterol, gluc, smoke, alco, active };
 
                 string pythonScriptPath = @"C:\Users\Christopher.Munyau\PycharmProjects\CAD_project\load_card_model.py";
-                string modelPath = @"C:\Users\Christopher.Munyau\PycharmProjects\CAD_project\dnn_model.joblib";
+                string modelPath = @"C:\Users\Christopher.Munyau\PycharmProjects\CAD_project\dnn_model.h5";
+                string scalerPath = @"C:\Users\Christopher.Munyau\PycharmProjects\CAD_project\scaler.joblib";
                 string pythonExePath = @"C:\Users\Christopher.Munyau\PycharmProjects\CAD_project\venv\Scripts\python.exe";
-                string arguments = $"\"{pythonScriptPath}\" \"{modelPath}\" {string.Join(" ", features)}";
+                string arguments = $"\"{pythonScriptPath}\" \"{modelPath}\" \"{scalerPath}\" {string.Join(" ", features)}";
 
                 ProcessStartInfo start = new ProcessStartInfo();
                 start.FileName = pythonExePath;

@@ -334,6 +334,12 @@
     <Compile Include="uc_card_main.Designer.cs">
       <DependentUpon>uc_card_main.cs</DependentUpon>
     </Compile>
+    <Compile Include="uc_tracking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_tracking.Designer.cs">
+      <DependentUpon>uc_tracking.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Frm_main.resx">
       <DependentUpon>Frm_main.cs</DependentUpon>
     </EmbeddedResource>
@@ -354,6 +360,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uc_card_main.resx">
       <DependentUpon>uc_card_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_tracking.resx">
+      <DependentUpon>uc_tracking.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

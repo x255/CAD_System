@@ -87,5 +87,11 @@ namespace CAD_System
             addUserControl(uc_home);
 
         }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            uc_tracking uc_track = new uc_tracking();
+            addUserControl(uc_track);
+        }
     }
 }
