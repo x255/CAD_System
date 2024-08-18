@@ -55,9 +55,6 @@ namespace CAD_System
 
                         // Display the raw output from the Python script
                         label5.Text = result;
-                        label5.AutoSize = false;
-                        label5.MaximumSize = new Size(400, 0); // Adjust width as needed
-                        label5.TextAlign = ContentAlignment.TopLeft;
                     }
                 }
             }
