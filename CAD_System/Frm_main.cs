@@ -10,11 +10,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace CAD_System
 {
     public partial class Form1 : Form
     {
+        public Point mouseLocation;
         public Form1()
         {
             InitializeComponent();
@@ -92,6 +94,38 @@ namespace CAD_System
         {
             uc_tracking uc_track = new uc_tracking();
             addUserControl(uc_track);
+        }
+
+        private void mouse_Down(object sender, MouseEventArgs e)
+        {
+            mouseLocation = new Point(-e.X, -e.Y);
+        }
+
+        private void mouse_Move(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Point mousePose = Control.MousePosition;
+                mousePose.Offset(mouseLocation.X, mouseLocation.Y);
+                Location = mousePose;
+            }
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            string email = "munyau.chris@yahoo.com";
+            string subject = Uri.EscapeDataString("Subject Here");
+            string body = Uri.EscapeDataString("Body of the email here.");
+            string mailto = $"mailto:{email}?subject={subject}&body={body}";
+
+            try
+            {
+                Process.Start(mailto);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to open email client: {ex.Message}");
+            }
         }
     }
 }
