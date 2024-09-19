@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Data Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form action="{{ url_for('form') }}" method="post">
+        <h2>Patient Data Form</h2>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br>
+        <label for="gender">Gender:</label>
+        <input type="number" id="gender" name="gender" required><br>
+        <label for="height">Height:</label>
+        <input type="number" id="height" name="height" required><br>
+        <label for="weight">Weight:</label>
+        <input type="number" id="weight" name="weight" required><br>
+        <label for="ap_hi">Systolic BP (ap_hi):</label>
+        <input type="number" id="ap_hi" name="ap_hi" required><br>
+        <label for="ap_lo">Diastolic BP (ap_lo):</label>
+        <input type="number" id="ap_lo" name="ap_lo" required><br>
+        <label for="cholesterol">Cholesterol:</label>
+        <input type="number" id="cholesterol" name="cholesterol" required><br>
+        <label for="gluc">Glucose:</label>
+        <input type="number" id="gluc" name="gluc" required><br>
+        <label for="smoke">Smoke:</label>
+        <input type="number" id="smoke" name="smoke" required><br>
+        <label for="alco">Alcohol:</label>
+        <input type="number" id="alco" name="alco" required><br>
+        <label for="active">Active:</label>
+        <input type="number" id="active" name="active" required><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
