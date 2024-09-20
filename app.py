@@ -5,10 +5,10 @@ import requests
 app = Flask(__name__)
 
 def run_predict_script(features):
-    hostname = 'ec2-13-60-193-60.eu-north-1.compute.amazonaws.com'
+    hostname = 'hostname_ip'
     username = 'ubuntu'
     key_path = 'C:/Users/Christopher.Munyau/.ssh/id_rsa'  # Updated path to your private key
-    passphrase = '#25@Dm1n25'  # Updated passphrase
+    passphrase = 'password'  # Updated passphrase
     script_path = '/home/cmunyau/predict.py'
     model_path = '/home/cmunyau/dnn_model.h5'  # Replace with the actual model path
     scaler_path = '/home/cmunyau/scaler.joblib'  # Replace with the actual scaler path
@@ -62,7 +62,7 @@ def form():
         # Interpret the result
         prediction = "CAD Positive" if result == "1" else "CAD Negative"
         # Send result to Teams webhook
-        webhook_url = 'https://liquidtelecommunications.webhook.office.com/webhookb2/c7765b1c-d569-4de3-8c31-57d7b34a7fb4@68792612-0f0e-46cb-b16a-fcb82fd80cb1/IncomingWebhook/40cbb88ca4144d509fa020fdc5d9198d/03e1c80e-6629-43d3-b282-a1ff742dab23'
+        webhook_url = 'your_teams_webhook'
         requests.post(webhook_url, json={"text": f"Prediction result: {prediction}"})
         return redirect(url_for('form'))
     return render_template('form.html')
